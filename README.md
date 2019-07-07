@@ -1,5 +1,5 @@
 # Codewars
----
+
 * My solved task's on the [codewars.com](https://www.codewars.com/users/konderev.ivan)
 
 * Language: [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
