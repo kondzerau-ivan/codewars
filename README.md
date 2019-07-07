@@ -1,5 +1,5 @@
 # Codewars
-
+---
 * My solved task's on the [codewars.com](https://www.codewars.com/users/konderev.ivan)
 
 * Language: [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
@@ -27,8 +27,11 @@
 >    iceBrickVolume(1, 10, 2); // => 16
 >    iceBrickVolume(5, 30, 7); // => 1150
 
+* Solution:
+
 ```javascript
 function iceBrickVolume(radius, bottleLength, rimLength) {
   return 2 * Math.pow(radius, 2) * (bottleLength - rimLength);
 }
 ```
+---
