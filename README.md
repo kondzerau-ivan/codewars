@@ -8,7 +8,7 @@
 
 ---
 
-### For Twins: 2. Math operations
+### [For Twins: 2. Math operations](https://www.codewars.com/kata/59c287b16bddd291c700009a)
 
 Prolog:
 
@@ -41,7 +41,7 @@ function iceBrickVolume(radius, bottleLength, rimLength) {
 ```
 ---
 
-### Holiday VI - Shark Pontoon
+### [Holiday VI - Shark Pontoon](https://www.codewars.com/kata/57e921d8b36340f1fd000059)
 
 Your friend invites you out to a cool floating pontoon around 1km off the beach. Among other things, the pontoon has a huge slide that drops you out right into the ocean, a small way from a set of stairs used to climb out.
 
@@ -69,7 +69,7 @@ function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
 ```
 ---
 
-### Find the unique number
+### [Find the unique number](https://www.codewars.com/kata/585d7d5adb20cf33cb000235)
 
 There is an array with some numbers. All numbers are equal except for one. Try to find it!
 ```javascript
@@ -80,7 +80,7 @@ It’s guaranteed that array contains more than 3 numbers.
 
 The tests contain some very huge arrays, so think about performance.
 
-##### [Solution:](https://www.codewars.com/kata/585d7d5adb20cf33cb000235)
+##### Solution:
 
 ```javascript
 function findUniq(arr) {
@@ -95,6 +95,37 @@ function findUniq(arr) {
       return arr[i + 1];
     }
   } 
+}
+```
+---
+
+### [Who likes it?](https://www.codewars.com/kata/5266876b8f4bf2da9b000362)
+
+You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.
+
+Implement a function likes :: [String] -> String, which must take in input array, containing the names of people who like an item. It must return the display text as shown in the examples:
+
+```javascript
+likes [] // must be "no one likes this"
+likes ["Peter"] // must be "Peter likes this"
+likes ["Jacob", "Alex"] // must be "Jacob and Alex like this"
+likes ["Max", "John", "Mark"] // must be "Max, John and Mark like this"
+likes ["Alex", "Jacob", "Mark", "Max"] // must be "Alex, Jacob and 2 others like this"
+```
+For 4 or more names, the number in and 2 others simply increases.
+
+##### Solution:
+
+```javascript
+function likes(names) {
+  switch(names.length){
+    case 0: return 'no one likes this';
+    case 1: return names[0] + ' likes this';
+    case 2: return names[0] + ' and ' + names[1] + ' like this';
+    case 3: return names[0] + ', ' + names[1] + ' and ' + names[2] + ' like this';
+    default:
+    return names[0] + ', ' + names [1] + ' and ' + (names.length - 2) + ' others like this';
+  }
 }
 ```
 ---
